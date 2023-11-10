@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<p>Please input a number between 150 and 300:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  // Get the value of the input field with id="numb"
+  let x = document.getElementById("numb").value;
+  // If x is less than 150 or greater than 300
+  let text;
+  if (x < 150) {
+    text = "Value too small";
+  } else if ( x > 300) {
+    text = "Value too large";
+  } else {
+    text = "Input is OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
